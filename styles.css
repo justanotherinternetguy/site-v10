@@ -33,6 +33,16 @@
   font-family: "dos";
 }
 
+@font-face {
+  src: url("./assets/MartianMonoNerdFontMono-Regular.ttf");
+  font-family: "martian";
+}
+
+@font-face {
+  src: url("./assets/MartianMonoNerdFontMono-Bold.ttf");
+  font-family: "martianbold";
+}
+
 html {
   scrollbar-color: #e4a7b3 #73c4ee;
 }
@@ -281,7 +291,9 @@ h3 {
   width: 100vw;
 }
 
-.wrapper h1 {
+.wrapper h1,
+.dailyplane h1,
+div > section > h1.dailyplane {
   font-family: neon;
   letter-spacing: 2px;
   font-size: 2.75em;
@@ -324,13 +336,15 @@ section li {
   margin: 0;
 }
 
-.wrapper li {
+.wrapper li,
+.blog li {
   list-style-image: url("./assets/heart21.gif");
   margin: 0;
   padding: 0;
 }
 
-.wrapper a {
+.wrapper a,
+.blog a {
   color: #ff10f0;
 }
 
@@ -406,4 +420,54 @@ section li {
   font-family: standard;
   margin-top: 1.5rem;
   font-size: 1.3rem;
+}
+
+.blogpost {
+  width: 70%;
+  margin: auto;
+  min-height: 60vh;
+}
+
+.blogpost h1,
+.blogpost p,
+.blogpost li {
+  font-family: martian;
+}
+
+.blogpost h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.blogpost h6 {
+  text-align: center;
+  color: aliceblue;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.blogpost p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-indent: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.blogpost img {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+strong {
+  font-family: martianbold;
+}
+
+code {
+  display: inline;
+  background-color: rgba(128, 128, 128, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 1rem;
 }
