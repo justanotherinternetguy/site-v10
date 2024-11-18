@@ -138,7 +138,8 @@ section {
   }
 }
 
-.mainheader h1 {
+.mainheader h1,
+.blogpost h1 {
   text-align: center;
   font-family: neon;
   letter-spacing: 2px;
@@ -430,13 +431,21 @@ section li {
 
 .blogpost h1,
 .blogpost p,
-.blogpost li {
+.blogpost li,
+.blogpost h2 {
   font-family: martian;
 }
 
 .blogpost h1 {
   text-align: center;
   font-size: 2.4rem;
+}
+
+.blogpost h2 {
+  text-align: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
 }
 
 .blogpost h6 {
@@ -451,6 +460,12 @@ section li {
   font-size: 1rem;
   line-height: 1.5;
   text-indent: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.blogpost li {
+  font-size: 1rem;
+  line-height: 1.5;
   margin-top: 0.5rem;
 }
 
