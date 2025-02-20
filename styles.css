@@ -1,43 +1,36 @@
+/* Font Definitions */
 @font-face {
-  src: url("./assets/ethnocentric\ rg.otf");
+  src: url("./assets/ethnocentric rg.otf");
   font-family: "ethno";
 }
-
 @font-face {
-  src: url("./assets/pixel\ font-7.ttf");
+  src: url("./assets/pixel font-7.ttf");
   font-family: "standard";
 }
-
 @font-face {
   src: url("./assets/neon_pixel-7.ttf");
   font-family: "neon";
 }
-
 @font-face {
   src: url("./assets/Exo-Regular.otf");
   font-family: "exo";
 }
-
 @font-face {
   src: url("./assets/Cantarell-Regular.ttf");
   font-family: "cant";
 }
-
 @font-face {
   src: url("./assets/Pixel_NES.otf");
   font-family: "nes";
 }
-
 @font-face {
-  src: url("./assets/Perfect\ DOS\ VGA\ 437\ Win.ttf");
+  src: url("./assets/Perfect DOS VGA 437 Win.ttf");
   font-family: "dos";
 }
-
 @font-face {
   src: url("./assets/MartianMonoNerdFontMono-Regular.ttf");
   font-family: "martian";
 }
-
 @font-face {
   src: url("./assets/MartianMonoNerdFontMono-Bold.ttf");
   font-family: "martianbold";
@@ -51,6 +44,7 @@ body {
   background-color: #02010a;
 }
 
+/* Background Layers */
 .spacebg,
 .spacebg2,
 .spacebg3,
@@ -67,21 +61,17 @@ body {
   box-shadow: 0 0 300px #10002b inset;
   background: url("./assets/space_bg.gif");
 }
-
 .spacebg2 {
   box-shadow: 0 0 150px #7b2cbf inset;
   background: url("./assets/space_bg2.gif");
 }
-
 .spacebg3 {
   opacity: 0.25;
   box-shadow: 0 0 60px #9d4edd inset;
   background: url("./assets/spacebackground.gif");
 }
-
 .spacebg4 {
   opacity: 0.15;
-  /* background: url("./assets/ezgif-6-05da15abdd.gif"); */
   background-position: center;
 }
 
@@ -93,7 +83,6 @@ body {
     background-position: 0px -400px;
   }
 }
-
 @keyframes backgroundScroll2 {
   0% {
     background-position: 0px 0px;
@@ -102,13 +91,36 @@ body {
     background-position: 0px -430px;
   }
 }
-
 @keyframes backgroundScroll3 {
   0% {
     background-position: 0px 0px;
   }
   100% {
     background-position: 0px -500px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rainbowText {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(79%);
+  }
+  100% {
+    transform: translateX(-75%);
   }
 }
 
@@ -122,9 +134,6 @@ section {
   border-radius: 26px;
   padding: 1.75rem;
   color: white;
-}
-
-section {
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
 }
@@ -218,12 +227,6 @@ h3 {
   }
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .mainheader p {
   text-align: center;
   font-size: 1.3rem;
@@ -251,18 +254,10 @@ h3 {
   text-align: center;
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(79%);
-  }
-  100% {
-    transform: translateX(-75%);
-  }
-}
-
 .navbar {
   display: flex;
   justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
 }
